@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Asnara - Handmade Crochet</title>
+
+    <style>
+        body { font-family: 'Poppins', sans-serif; color: #4A3425; background-color: #FFFCF8; }
+        h1, h2, h5, .navbar-brand { font-family: 'Allura', cursive; color: #6F4E37; }
+        .bg-beige { background-color: #F5EBDD; }
+        .bg-cokelat { background-color: #6F4E37; }
+        .text-cokelat { color: #6F4E37; }
+        .hero img { width: 100%; height: 380px; object-fit: cover; }
+        .gambar-produk { width: 100%; height: 250px; object-fit: cover; }
+        .btn-cokelat { background-color: #6F4E37; color: white; border-color: #6F4E37; }
+        .btn-cokelat:hover { background-color: #4A3425; color: white; }
+        .garis { width: 50px; height: 3px; background-color: #A67B5B; margin: 15px auto 25px; }
+        .card { border: none; }
+        .bagian-kontak { background-color: #F5EBDD; }
+
+        @media (max-width: 767px) {
+            .hero img { height: 260px; }
+            .gambar-produk { height: 220px; }
+            .navbar-brand { 
+                font-family: 'Allura', cursive; 
+                font-size: 2rem; 
+                font-weight: 700; 
+                color: #6F4E37; }
+    }
+    </style>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#beranda">Asnara</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar" aria-controls="menuNavbar" aria-expanded="false" aria-label="Buka menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#beranda">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tentang">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#katalog">Katalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+
+    <!--Hero Section: Bootstrap Grid-->
+    <section id="beranda" class="hero bg-beige py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-md-6">
+                    <p class="text-uppercase text-cokelat small">Handmade with Love</p>
+                    <h1 class="display-4">Rajutan handmade untuk setiap hari</h1>
+                    <p>Temukan berbagai produk rajut handmade dengan desain unik dan warna yang menarik, cocok untuk menemani aktivitas sehari-hari.</p>
+                    <a href="#katalog" class="btn btn-cokelat rounded-pill px-4">Lihat Katalog</a>
+                </div>
+
+                <div class="col-md-6">
+                    <!--Foto utama: simpan dengan nama hero.jpg di folder gambar-->
+                    <img src="koleksi rajutan handmade Asnara.jpeg" class="img-fluid rounded-4 shadow" alt="Koleksi rajutan Asnara">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Tentang-->
+    <section id="tentang" class="container py-5">
+        <div class="row align-items-center g-4">
+            <div class="col-md-6">
+                <img src="" class="img-fluid rounded-4 shadow" alt="Benang dan hasil rajutan">
+            </div>
+
+            <div class="col-md-6">
+                <p class="text-uppercase text-cokelat small">Tentang Kami</p>
+                <h2>Rajutan Kecil, Cerita yang Berarti</h2>
+                <div class="garis" style="margin-left: 0;"></div>
+                <p>Halo, selamat datang di Asnara!</p>
+                <p>Asnara merupakan toko rajut handmade yang menghadirkan berbagai produk rajutan dengan sentuhan kreativitas dan ketelitian. Setiap produk dibuat dengan penuh perhatian untuk menghasikan karya yang unik, cantik, dan memiliki nilai tersendiri.</p>
+                <p>Temukan berbaagai koleksi rajutan handmade yang cocok untuk melengkapi gaya sehari-hari maupun dijadikan hadiah istimewa untuk orang tersayang.</p>
+                <a href="#katalog" class="btn btn-cokelat rounded-pill px-4">Lihat Produk</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Katalog: Bootstrap Cards-->
+    <section id="katalog" class="container py-5">
+        <div class="text-center mb-4">
+            <p class="text-uppercase text-cokelat small">Koleksi Handmade</p>
+            <h2>Produk Unggulan</h2>
+            <div class="garis"></div>
+            <p>Pilihan rajutan handmade untuk menemani keseharianmu.</p>
+        </div>
+
+        <div class="row g-4">
+
+            <!--Card 1: foto tas.jpg di folder gambar-->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm rounded-4 overflow-hidden">
+                    <img src="gambar/tas.jpg" class="card-img-top gambar-produk" alt="Tas rajut">
+                    <div class="card-body p-4">
+                        <h5 class="card-title">Tas Rajut Daisy</h5>
+                        <p class="text-cokelat fw-bold">Rp 85.000</p>
+                        <p class="card-text">Tas rajut handmade dengan motif cantik untuk aktivitas sehari-hari.</p>
+                        <a href="#kontak" class="btn btn-cokelat rounded-pill">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 2: foto topi.jpg di folder gambar-->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm rounded-4 overflow-hidden">
+                    <img src="gambar/topi.jpg" class="card-img-top gambar-produk" alt="Topi rajut">
+                    <div class="card-body p-4">
+                        <h5 class="card-title">Topi Rajut Bucket</h5>
+                        <p class="text-cokelat fw-bold">Rp 65.000</p>
+                        <p class="card-text">Topi rajut dengan desain sederhana, nyaman, dan mudah dipadukan.</p>
+                        <a href="#kontak" class="btn btn-cokelat rounded-pill">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 3: foto boneka.jpg di folder gambar-->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm rounded-4 overflow-hidden">
+                    <img src="gambar/boneka.jpg" class="card-img-top gambar-produk" alt="Boneka rajut">
+                    <div class="card-body p-4">
+                        <h5 class="card-title">Boneka Rajut</h5>
+                        <p class="text-cokelat fw-bold">Rp 35.000</p>
+                        <p class="card-text">Boneka rajut mungil yang lucu sebagai hadiah atau aksesori.</p>
+                        <a href="#kontak" class="btn btn-cokelat rounded-pill">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Kontak: Bootstrap Form-->
+    <section id="kontak" class="bagian-kontak py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-md-5">
+                    <!--Foto suasana rajutan: gunakan hero.jpg atau foto lain-->
+                    <img src="gambar/hero.jpg" class="img-fluid rounded-4 shadow" alt="Suasana kerajinan rajut">
+                    <h2 class="mt-4">Mari Terhubung</h2>
+                    <p>Silakan kirim pesan jika ingin bertanya tentang produk BenangSenja.</p>
+                </div>
+
+                <div class="col-md-7">
+                    <h2 class="text-center mb-4">Hubungi Kami</h2>
+
+                    <form id="formKontak" class="bg-white p-4 rounded-4 shadow-sm">
+                        <div class="mb-3">
+                            <label for="nama" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label">Pesan</label>
+                            <textarea class="form-control" id="pesan" rows="4" placeholder="Tulis pesan Anda" required></textarea>
+                        </div>
+
+                        <!--Tombol untuk membuka modal Bootstrap-->
+                        <button type="submit" class="btn btn-cokelat w-100 rounded-pill">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Modal Konfirmasi: Bootstrap Modal-->
+    <div class="modal fade" id="modalKonfirmasi" tabindex="-1" aria-labelledby="judulModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-beige">
+                    <h5 class="modal-title" id="judulModal">Konfirmasi Pesan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+
+                <div class="modal-body">
+                    Apakah Anda yakin ingin mengirim pesan ini?
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                    <button type="button" class="btn btn-cokelat" id="tombolKirim">Ya, kirim</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="bg-cokelat text-white text-center py-4">
+        <div class="container">
+            <h5 class="text-white">BenangSenja</h5>
+            <p class="mb-1">Rajutan handmade dengan penuh cinta.</p>
+            <small>&copy; 2026 BenangSenja. Semua hak dilindungi.</small>
+        </div>
+    </footer>
+
+    <!--Bootstrap JavaScript dari website resmi-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--JavaScript untuk validasi form dan modal-->
+    <script>
+        const formKontak = document.getElementById("formKontak");
+        const modal = new bootstrap.Modal(document.getElementById("modalKonfirmasi"));
+
+        formKontak.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            if (formKontak.checkValidity()) {
+                modal.show();
+            } else {
+                formKontak.reportValidity();
+            }
+        });
+
+        document.getElementById("tombolKirim").addEventListener("click", function() {
+            alert("Pesan berhasil dikonfirmasi. Ini masih simulasi, pesan belum dikirim ke server.");
+            modal.hide();
+            formKontak.reset();
+        });
+    </script>
+
+</body>
+</html>
